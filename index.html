@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="toggle-container">
+        <label class="toggle-switch">
+            <input type="checkbox" id="toggle-mode" />
+            <span class="toggle-slider"></span>
+        </label>
+    </div>
+    <div class="container">
+        <h1><a style="text-decoration: none; color: #f1c40f; margin-left: 1.25rem;" href="" onclick="location.reload();">CALCULATOR</a> </h1>&nbsp;&nbsp;
+        <div class="calculator">
+            <input type="text" name="screen" id="answer" readonly>
+            <table>
+                <tr>
+                    <td><button>(</button></td>
+                    <td><button>)</button></td>
+                    <td>
+                        <div class="row">
+                            <button style="background-color: #f01600; font-weight: bold; color: #ecf0f1; width: 8vw;" onclick="clearAll()">C</button>
+                            <button style="background-color: #f01600; font-weight: bold; color: #ecf0f1; width: 8vw;" onclick="deleteLastEntry()">CE</button>
+                        </div>
+                    </td>
+                    <td><button>%</button></td>
+                </tr>
+                <tr>
+                    <td><button>7</button></td>
+                    <td><button>8</button></td>
+                    <td><button>9</button></td>
+                    <td><button>X</button></td>
+                </tr>
+                <tr>
+                    <td><button>4</button></td>
+                    <td><button>5</button></td>
+                    <td><button>6</button></td>
+                    <td><button>-</button></td>
+                </tr>
+                <tr>
+                    <td><button>1</button></td>
+                    <td><button>2</button></td>
+                    <td><button>3</button></td>
+                    <td><button>+</button></td>
+                </tr>
+                <tr>
+                    <td><button>0</button></td>
+                    <td><button style="font-weight: bold;">.</button></td>
+                    <td><button>/</button></td>
+                    <td><button style="background-color: #25db72; font-weight: bold; color: #ecf0f1;">=</button></td>
+                </tr>
+            </table>
+            <hr style="max-width: 50vw;">
+        </div>
+    </div>
+    <div id="bar1" class="bars"></div>
+    <div id="bar2" class="bars"></div>
+    <div id="history">
+    </div>
+    <div id="turn">
+        PLEASE TURN YOUR DEVICE
+    </div>
+    <script src="calc.js"></script>
+</body></html>
